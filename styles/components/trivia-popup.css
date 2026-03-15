@@ -1,0 +1,88 @@
+/* Trivia Popup */
+.trivia-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  max-width: 380px;
+  border-radius: var(--radius-lg);
+  padding: var(--space-md) 20px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  transform: translateX(-120%);
+  transition: transform 0.4s ease-out;
+  z-index: 1500;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.trivia-popup--visible {
+  animation: triviaSlideIn 0.5s ease-out forwards;
+}
+
+.trivia-popup--hiding {
+  animation: triviaSlideOut 0.4s ease-in forwards;
+}
+
+@keyframes triviaSlideIn {
+  0% { transform: translateX(-120%); }
+  70% { transform: translateX(8px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes triviaSlideOut {
+  from { transform: translateX(0); }
+  to { transform: translateX(-120%); }
+}
+
+.trivia-popup__content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.trivia-popup__icon {
+  font-size: var(--text-2xl);
+  flex-shrink: 0;
+}
+
+.trivia-popup__text {
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  font-weight: 500;
+  color: white;
+}
+
+/* Category colors */
+.trivia-popup--bandFact,
+.trivia-popup--memberFact {
+  background: rgba(255, 50, 80, 0.92);
+}
+
+.trivia-popup--songTrivia {
+  background: rgba(200, 40, 70, 0.92);
+}
+
+.trivia-popup--venueStory {
+  background: rgba(255, 140, 0, 0.92);
+}
+
+.trivia-popup--classicRock {
+  background: rgba(180, 30, 60, 0.92);
+}
+
+.trivia-popup--tokyoMusic {
+  background: rgba(255, 200, 0, 0.88);
+}
+
+.trivia-popup--tokyoMusic .trivia-popup__text {
+  color: #1a1a0a;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .trivia-popup {
+    bottom: 44px;
+    left: 12px;
+    right: 12px;
+    max-width: none;
+  }
+}

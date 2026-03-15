@@ -1,0 +1,99 @@
+/* Admin Panel */
+.admin {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  font-family: var(--font-body);
+  color: var(--text-primary);
+}
+
+.admin__header {
+  padding: var(--space-md) var(--space-xl);
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.admin__logo-text {
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-red);
+  padding: 4px 10px;
+  border: 1px solid rgba(255, 50, 80, 0.3);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 50, 80, 0.06);
+}
+
+.admin__label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+.admin__nav {
+  display: flex;
+  gap: 2px;
+  padding: var(--space-sm) var(--space-xl);
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.admin__nav-link {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.admin__nav-link:hover,
+.admin__nav-link--active {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.admin__nav-link--active {
+  color: var(--color-red);
+}
+
+.admin__content {
+  padding: var(--space-xl);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.admin__login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.admin__login-form {
+  width: 100%;
+  max-width: 400px;
+  padding: var(--space-2xl);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+}
+
+.admin__login-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}

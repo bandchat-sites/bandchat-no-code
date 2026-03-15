@@ -1,0 +1,25 @@
+/* Gigs Page */
+.gigs-page__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: var(--max-width-narrow);
+  margin: 0 auto;
+}
+
+.gigs-page__empty {
+  text-align: center;
+  padding: var(--space-4xl) var(--space-lg);
+  color: var(--text-muted);
+}
+
+.gigs-page__empty-icon {
+  font-size: var(--text-5xl);
+  margin-bottom: var(--space-lg);
+  opacity: 0.3;
+}
+
+.gigs-page__empty-text {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-md);
+}

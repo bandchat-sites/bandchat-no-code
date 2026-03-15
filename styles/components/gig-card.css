@@ -1,0 +1,140 @@
+/* Gig Card */
+.gig-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--color-red);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  transition: all var(--transition-base);
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+}
+
+.gig-card:hover {
+  border-color: rgba(255, 50, 80, 0.3);
+  border-left-color: var(--color-red-light);
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
+}
+
+.gig-card__date {
+  flex-shrink: 0;
+  text-align: center;
+  min-width: 70px;
+}
+
+.gig-card__month {
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-red);
+  font-weight: 600;
+}
+
+.gig-card__day {
+  font-family: var(--font-heading);
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text-primary);
+}
+
+.gig-card__weekday {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.gig-card__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.gig-card__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: var(--space-xs);
+}
+
+.gig-card__venue {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.gig-card__meta {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+.gig-card__status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.gig-card__status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.gig-card__status-dot--scheduled {
+  background: var(--color-amber);
+}
+
+.gig-card__status-dot--completed {
+  background: #22c55e;
+}
+
+.gig-card__status-dot--cancelled {
+  background: var(--color-red);
+}
+
+.gig-card__actions {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Compact variant for listing */
+.gig-card--compact {
+  padding: var(--space-md);
+}
+
+.gig-card--compact .gig-card__date {
+  min-width: 55px;
+}
+
+.gig-card--compact .gig-card__day {
+  font-size: var(--text-2xl);
+}
+
+/* Video link in gig detail */
+.gig-detail__video-link {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+  transition: color 0.2s;
+}
+
+.gig-detail__video-link:hover {
+  color: var(--color-red);
+}
+
+.gig-detail__video-link:hover img {
+  opacity: 0.8 !important;
+}
