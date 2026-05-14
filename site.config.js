@@ -28,7 +28,13 @@ export default {
     ],
     "mediaImages": []
   },
-  "social": [],
+  "social": [
+    {
+      "url": "https://www.instagram.com/no_code_tokyo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      "label": "Instagram",
+      "platform": "instagram"
+    }
+  ],
   "founded": 2025,
   "tagline": "Tokyo's Pearl Jam Tribute Band",
   "bandName": "No Code",
@@ -52,7 +58,7 @@ export default {
     "spotify": "",
     "youtube": "",
     "facebook": "",
-    "instagram": ""
+    "instagram": "https://www.instagram.com/no_code_tokyo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
   },
   "contactEmail": "",
   "customizations": {
