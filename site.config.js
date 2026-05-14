@@ -25,7 +25,8 @@ export default {
     "logo": null,
     "heroImages": [
       "https://pub-84ab70b370d7498390626d5f77c82f60.r2.dev/images/60baf284-f9ac-48e9-8646-45774bdf4a06.jpg"
-    ]
+    ],
+    "mediaImages": []
   },
   "social": [],
   "founded": 2025,
@@ -53,5 +54,10 @@ export default {
     "facebook": "",
     "instagram": ""
   },
-  "contactEmail": ""
+  "contactEmail": "",
+  "customizations": {
+    "customLinks": [],
+    "youtubeUrls": []
+  },
+  "useCustomizations": false
 };
