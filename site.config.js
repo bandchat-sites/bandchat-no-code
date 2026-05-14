@@ -59,5 +59,5 @@ export default {
     "customLinks": [],
     "youtubeUrls": []
   },
-  "useCustomizations": false
+  "useCustomizations": true
 };
