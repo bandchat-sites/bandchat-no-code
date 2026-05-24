@@ -8,7 +8,7 @@ export default {
     "name": "No Code",
     "genre": "Pearl Jam",
     "founded": 2025,
-    "tagline": "Tokyo's Pearl Jam Tribute Band",
+    "tagline": "Tokyo's Best Pearl Jam Tribute Band",
     "location": "Tokyo, Japan",
     "description": "Keeping Grunge Alive Since 2025"
   },
@@ -36,7 +36,7 @@ export default {
     }
   ],
   "founded": 2025,
-  "tagline": "Tokyo's Pearl Jam Tribute Band",
+  "tagline": "Tokyo's Best Pearl Jam Tribute Band",
   "bandName": "No Code",
   "features": {
     "blog": false,
